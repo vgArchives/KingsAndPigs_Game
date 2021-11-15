@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Floor
+  - PlayerChar
+  - Enemy
+  - Enviroment
+  - Door
+  - Boss
+  - GlobalLight
+  - Diamonds
+  - Heart
+  - EndDoor
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Entities
+  - Foreground
+  - Background
+  - EnemyCollision
+  - Life and Coins
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 607022677
+    locked: 0
+  - name: Decoration
+    uniqueID: 3058924495
+    locked: 0
+  - name: Foreground
+    uniqueID: 600471047
+    locked: 0
+  - name: Life And Coins
+    uniqueID: 414356499
+    locked: 0
+  - name: Entities
+    uniqueID: 1910980933
+    locked: 0
+  - name: PauseMenu
+    uniqueID: 1741628055
+    locked: 0
