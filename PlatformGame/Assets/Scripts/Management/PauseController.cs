@@ -9,12 +9,6 @@ public class PauseController : MonoBehaviour
     [SerializeField] public bool paused = false;
     [SerializeField] public GameObject pauseMenuUI;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
