@@ -9,24 +9,9 @@ public class BossEnteringController : MonoBehaviour
     [SerializeField] private GameObject boss;
     [SerializeField] private GameObject bossPosition;
     [SerializeField] private GameObject lights;
-
     [SerializeField] private Light2D globalLight;
-
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip bossMusic;
-
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void CreateBoss()
     {
