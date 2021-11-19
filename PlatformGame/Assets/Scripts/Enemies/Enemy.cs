@@ -17,18 +17,6 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected int lifePoints;
     [SerializeField] protected bool dead;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-       
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void Move()
     {
         if (IsStuck()) enemyRb.velocity = new Vector2(enemyRb.velocity.x * -1, enemyRb.velocity.y);
@@ -47,7 +35,7 @@ public class Enemy : MonoBehaviour
 
     public void LookingDirection()
     {
-        //Ajusta a direÁ„o que o inimigo ta olhando
+        //Ajusta a dire√ß√£o que o inimigo ta olhando
          if (enemyRb.velocity.x != 0)
          {
             transform.localScale = new Vector3(Mathf.Sign(enemyRb.velocity.x) * -1, 1f, 1f);
@@ -64,7 +52,7 @@ public class Enemy : MonoBehaviour
         return wall;
     }
 
-    public void ReceiveDamage() //Esse mÈtodo est· sendo chamado na animaÁ„o de hit do inimigo
+    public void ReceiveDamage() //Esse m√©todo est√° sendo chamado na anima√ß√£o de hit do inimigo
     {
         this.lifePoints -= 1; 
         Die();
