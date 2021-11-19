@@ -26,13 +26,7 @@ public class GameManager : MonoBehaviour
         scoreText.text = gameScorePoints.ToString();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
- 
-    }
-
-    public void CheckLife() //Atualizando os corações no canvas de acordo com a vida atual do player
+    public void CheckLife() //Atualizando os coraÃ§Ãµes no canvas de acordo com a vida atual do player
     {
         for (int i = 1; i <= hearts.Length; i++)
         {
