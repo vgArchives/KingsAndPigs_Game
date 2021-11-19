@@ -11,13 +11,7 @@ public class PigController : Enemy
         enemyAnimator = GetComponent<Animator>();
         boxCollider = GetComponent<BoxCollider2D>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-      
-    }
-
+    
     private void FixedUpdate()
     {
         if(!dead) Move();
