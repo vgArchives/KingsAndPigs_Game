@@ -35,7 +35,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private AudioClip lifeSound;
     [SerializeField] private AudioClip deathSound;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -44,10 +43,7 @@ public class PlayerController : MonoBehaviour
        playerRb = GetComponent<Rigidbody2D>();
        playerAnimator = GetComponent<Animator>();
        playerBoxCollider = GetComponent<BoxCollider2D>();
-
        lifePoints = gameManager.GetPlayerLifePoints(); 
-
-      
     }
 
     // Update is called once per frame
@@ -64,7 +60,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void FixedUpdate() //Usar quando estiver trabalhando com fÌsica
+    private void FixedUpdate() //Usar quando estiver trabalhando com f√≠sica
     {
         playerAnimator.SetBool("OnFloor", IsGrounded());        
     }
@@ -117,8 +113,8 @@ public class PlayerController : MonoBehaviour
         
         //Mathf.Sing retorna 1 se o valor inserido for positivo e -1 se o valor inserido for negativo
         if(currentHorizontalValue != 0) transform.localScale = new Vector3(Mathf.Sign(currentHorizontalValue), 1f, 1f);
-        //Esse teste returna true se o valor de movimento for diferente de zero e true caso contr·rio
-        //isso È usado para alterar o valor da variavel de movimento alternando entre as animaÁıes
+        //Esse teste returna true se o valor de movimento for diferente de zero e true caso contr√°rio
+        //isso √© usado para alterar o valor da variavel de movimento alternando entre as anima√ß√µes
         playerAnimator.SetBool("Moving", currentHorizontalValue != 0); 
     }
 
@@ -136,7 +132,7 @@ public class PlayerController : MonoBehaviour
         else jumpCount = 0;
     }
 
-    //Rayscast/BoxCast de colis„o no ch„o (Raycast = linha que aponta para algo)
+    //Rayscast/BoxCast de colis√£o no ch√£o (Raycast = linha que aponta para algo)
     private bool IsGrounded()
     {
         //Criando o Raycast
@@ -169,7 +165,7 @@ public class PlayerController : MonoBehaviour
         lockPlayer = condition;
     }
 
-    public void Die() //Esse mÈtodo est· sendo chamado no inÌcio da animaÁ„o de morte do player
+    public void Die() //Esse m√©todo est√° sendo chamado no in√≠cio da anima√ß√£o de morte do player
     {
         LockPlayer(true);
         PlaySound(deathSound, transform.position, 1f);
@@ -200,7 +196,7 @@ public class PlayerController : MonoBehaviour
         }                
     }
 
-    private void GameOver() //Esse mÈtodo È chamado no fim da animaÁ„o de morte do player
+    private void GameOver() //Esse m√©todo √© chamado no fim da anima√ß√£o de morte do player
     {
         gameManager.StartNewGame();
     }
