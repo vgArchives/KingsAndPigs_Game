@@ -46,13 +46,7 @@ public class KingPigController : MonoBehaviour
 
         target = GameObject.FindGameObjectWithTag("PlayerChar").GetComponent<Transform>();
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
+    
     private void FixedUpdate()
     {
         if (!dead)
@@ -108,7 +102,7 @@ public class KingPigController : MonoBehaviour
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 
-    public void ReceiveDamage() //Esse mÈtodo est· sendo chamado na animaÁ„o de hit do inimigo
+    public void ReceiveDamage() //Esse m√©todo est√° sendo chamado na anima√ß√£o de hit do inimigo
     {
         this.lifePoints -= 1;
         enemyAnimator.SetInteger("Life", lifePoints);
