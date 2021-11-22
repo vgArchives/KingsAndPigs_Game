@@ -5,3 +5,7 @@
 Kings and Pigs is a short platform game where you are a king and need to take your castle back from the pigs.  
 I have a lot of fun developing this game, and if you want to try it out just click on the link:   
 https://archivesvg.itch.io/kings-and-pigs
+
+## Short Gameplay
+https://user-images.githubusercontent.com/81108091/142906460-302761d5-50d3-4877-bf79-5958120cb8c6.mp4
+
